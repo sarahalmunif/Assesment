@@ -1,6 +1,6 @@
 Q1: Problem solving 
 
-  stack = []
+    stack = []
     
     for char in s:
         if char == ')':
