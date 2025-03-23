@@ -1,0 +1,17 @@
+
+type Query {
+  itemMetadata(id: ID!): Item
+}
+
+type Item {
+  id: ID!
+  name: String!
+  type: String!
+  parent: Item
+  permissions: [Permission!]
+}
+
+type Permission {
+  userEmail: String!
+  permissionLevel: String!
+}
